@@ -44,3 +44,49 @@ This project is an Arduino-based Sumo Robot designed for sumo robot competitions
 
 ---
 
+## How It Works
+
+- **Startup:** The robot waits for the activation switch to be pressed.
+- **Edge Detection:** If the IR sensor detects the edge (LOW), the robot reverses and turns to avoid falling.
+- **Opponent Detection:** If an opponent is detected within 30 cm by the ultrasonic sensor, the robot moves forward at full speed.
+- **Searching:** If no opponent is detected, the robot rotates to search for one.
+- **Deactivation:** If the switch is released, the robot stops all motors.
+
+---
+
+## Arduino Code
+
+The main logic is in `Sumo Robot Competition.ino`.  
+Upload this file to your Arduino board.
+
+---
+
+## Usage
+
+1. Assemble the hardware according to the pin connections.
+2. Upload the Arduino sketch to your board.
+3. Place the robot in the sumo ring.
+4. Press the activation switch to start the robot.
+5. The robot will autonomously compete in the sumo ring.
+
+---
+
+## Customization
+
+- **Detection Range:** Adjust the `distance < 30` value in the code to change how close the opponent must be before the robot attacks.
+- **Motor Speed:** Change the values in `moveForward`, `reverse`, `turnRight`, and `rotateRight` functions to tune the robot's movement.
+
+---
+
+## License
+
+This project is open-source and free to use for educational and competition purposes.
+
+---
+
+## Author
+
+- Ice-Chidi
+- https://github.com/icechidi
+
+---
