@@ -74,7 +74,7 @@ Upload this file to your Arduino board.
 ## Customization
 
 - **Detection Range:** Adjust the `distance < 30` value in the code to change how close the opponent must be before the robot attacks.
-- **Motor Speed:** Change the values in `moveForward`, `reverse`, `turnRight`, and `rotateRight` functions to tune the robot's movement.
+- **Motor Speed:** Change the values in `moveForward`, `reverse`, `turnRight`, and `rotateRight` functions to tune the robot's movement...
 
 ---
 
